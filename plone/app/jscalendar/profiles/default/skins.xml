@@ -5,6 +5,6 @@
     directory="plone.app.jscalendar:skins/plone_app_jscalendar"/>
  <skin-path name="*">
   <layer name="plone_app_jscalendar"
-     insert-after="custom"/>
+     insert-before="plone_ecmascript"/>
  </skin-path>
 </object>
