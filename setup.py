@@ -11,12 +11,17 @@ setup(name='plone.app.jscalendar',
       # Get more strings from
       # http://pypi.python.org/pypi?:action=list_classifiers
       classifiers=[
-        "Programming Language :: Python",
+          "Environment :: Web Environment",
+          "Framework :: Plone",
+          "Framework :: Zope2",
+          "License :: OSI Approved :: GNU General Public License (GPL)",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python",
         ],
-      keywords='',
-      author='',
-      author_email='',
-      url='http://svn.plone.org/svn/collective/',
+      keywords='plone',
+      author='Plone Foundation',
+      author_email='plone-developers@lists.sourceforge.net',
+      url='http://pypi.python.org/pypi/plone.app.jscalendar',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
       namespace_packages=['plone', 'plone.app'],
@@ -26,6 +31,7 @@ setup(name='plone.app.jscalendar',
           'setuptools',
           # -*- Extra requirements: -*-
       ],
+      extras_require={'test': ['plone.app.testing']},
       entry_points="""
       # -*- Entry points: -*-
       [z3c.autoinclude.plugin]
